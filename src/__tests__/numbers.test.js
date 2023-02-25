@@ -73,7 +73,7 @@ describe('roundUp', () => {
 });
 
 describe('roundDown', () => {
-  xit('rounds the number down to the nearest integer', () => {
+  it('rounds the number down to the nearest integer', () => {
     expect(roundDown(2.1)).toEqual(2);
     expect(roundDown(9.7)).toEqual(9);
     expect(roundDown(5.5)).toEqual(5);
@@ -81,7 +81,7 @@ describe('roundDown', () => {
 });
 
 describe('absolute', () => {
-  xit('returns the absolute value of the number', () => {
+  it('returns the absolute value of the number', () => {
     expect(absolute(-1)).toEqual(1);
     expect(absolute(1)).toEqual(1);
     expect(absolute(0)).toEqual(0);
