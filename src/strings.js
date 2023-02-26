@@ -1,27 +1,24 @@
 const sayHello = (string) => {
-  if (string === 'world') {
-    return 'Hello, world!';
-  }
+  return 'Hello, ' + string + '!';
+};
+const uppercase = (string) => {
+  return string.toUpperCase();
 };
 
-function uppercase (string) {
-  // your code here
+const lowercase = (string) => {
+  return string.toLowerCase();
 };
 
-function lowercase (string) {
-  // your code here
+const countCharacters = (string) => {
+  return string.length;
 };
 
-function countCharacters (string) {
-  // your code here
+const firstCharacter = (string) => {
+  return string.charAt(0);
 };
 
-function firstCharacter (string) {
-  // your code here
-};
-
-function firstCharacters (string, n) {
-  // your code here
+const firstCharacters = (string, n) => {
+  return string.substring(0, n);
 };
 
 module.exports = {

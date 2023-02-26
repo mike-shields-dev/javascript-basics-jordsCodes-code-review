@@ -1,5 +1,8 @@
-function negate(a) {
-  // your code here
+const negate = (a) => {
+  if(a){
+    return false;
+  }
+    return true;
 };
 
 function both(a, b) {
