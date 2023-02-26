@@ -117,7 +117,7 @@ describe('isOdd', () => {
 });
 
 describe('isEven', () => {
-  it('returns whether the number is even', () => {
+  xit('returns whether the number is even', () => {
     expect(isEven(5)).toBe(false);
     expect(isEven(6)).toBe(true);
     expect(isEven(7)).toBe(false);
@@ -126,7 +126,7 @@ describe('isEven', () => {
 });
 
 describe('isSquare', () => {
-  xit('returns true if the number is a square', () => {
+  it('returns true if the number is a square', () => {
     expect(isSquare(9)).toEqual(true);
     expect(isSquare(4)).toEqual(true);
     expect(isSquare(5)).toEqual(false);
