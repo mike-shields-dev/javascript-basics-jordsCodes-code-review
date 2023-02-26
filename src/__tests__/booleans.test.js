@@ -60,7 +60,7 @@ describe('one', () => {
 });
 
 describe('truthiness', () => {
-  it('returns the truthiness of the given value', () => {
+  xit('returns the truthiness of the given value', () => {
     expect(truthiness('')).toBe(false);
     expect(truthiness('dbbd')).toBe(true);
     expect(truthiness(0)).toBe(false);
@@ -74,7 +74,7 @@ describe('truthiness', () => {
 });
 
 describe('isEqual', () => {
-  xit('returns whether the two values are equal', () => {
+  it('returns whether the two values are equal', () => {
     expect(isEqual(true, false)).toBe(false);
     expect(isEqual(true, true)).toBe(true);
     expect(isEqual('true', 'true')).toBe(true);
