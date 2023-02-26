@@ -22,7 +22,7 @@ it('returns "Hello world!" when passed "world"', () => {
 });
 
 describe('uppercase', () => {
-  xit('returns the uppercased string', () => {
+  it('returns the uppercased string', () => {
     expect(uppercase('abc')).toEqual('ABC');
     expect(uppercase('def')).toEqual('DEF');
     expect(uppercase('ghi')).toEqual('GHI');
