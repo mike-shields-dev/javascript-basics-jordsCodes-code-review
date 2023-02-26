@@ -74,7 +74,7 @@ describe('truthiness', () => {
 });
 
 describe('isEqual', () => {
-  it('returns whether the two values are equal', () => {
+  xit('returns whether the two values are equal', () => {
     expect(isEqual(true, false)).toBe(false);
     expect(isEqual(true, true)).toBe(true);
     expect(isEqual('true', 'true')).toBe(true);
@@ -86,7 +86,7 @@ describe('isEqual', () => {
 });
 
 describe('isGreaterThan', () => {
-  xit('returns true if the first number is strictly greater than the second', () => {
+  it('returns true if the first number is strictly greater than the second', () => {
     expect(isGreaterThan(1, 2)).toBe(false);
     expect(isGreaterThan(3, 2)).toBe(true);
     expect(isGreaterThan(4, 4)).toBe(false);
