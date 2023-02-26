@@ -2,11 +2,14 @@ const negate = (a) => {
   if(a){
     return false;
   }
-    return true;
+  return true;
 };
 
-function both(a, b) {
-  // your code here
+const both = (a, b) => {
+  if (a && b){
+    return true;
+  }
+    return false;
 };
 
 function either(a, b) {
