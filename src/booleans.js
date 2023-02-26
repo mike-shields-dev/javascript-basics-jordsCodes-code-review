@@ -12,8 +12,11 @@ const both = (a, b) => {
     return false;
 };
 
-function either(a, b) {
-  // your code here
+const either = (a, b) => {
+  if (a || b){
+    return true;
+  }
+    return false;
 };
 
 function none(a, b) {
