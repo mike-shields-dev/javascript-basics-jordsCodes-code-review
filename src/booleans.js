@@ -19,8 +19,11 @@ const either = (a, b) => {
     return false;
 };
 
-function none(a, b) {
-  // your code here
+const none = (a, b) => {
+  if (a && b)
+  {
+    return false;
+  }
 };
 
 function one(a, b) {
