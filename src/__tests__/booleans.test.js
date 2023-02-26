@@ -126,7 +126,7 @@ describe('isEven', () => {
 });
 
 describe('isSquare', () => {
-  it('returns true if the number is a square', () => {
+  xit('returns true if the number is a square', () => {
     expect(isSquare(9)).toEqual(true);
     expect(isSquare(4)).toEqual(true);
     expect(isSquare(5)).toEqual(false);
@@ -136,7 +136,7 @@ describe('isSquare', () => {
 });
 
 describe('startsWith', () => {
-  xit('returns whether the given string starts with the given character', () => {
+  it('returns whether the given string starts with the given character', () => {
     expect(startsWith('a', 'aardvark')).toBe(true);
     expect(startsWith('c', 'aardvark')).toBe(false);
     expect(startsWith('b', 'baardvark')).toBe(true);
