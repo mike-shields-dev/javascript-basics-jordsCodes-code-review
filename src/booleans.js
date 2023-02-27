@@ -105,8 +105,12 @@ const containsVowels = string => {
   return false;
 };
 
-function isLowerCase(string) {
-  // your code here
+const isLowerCase = string => {
+  const firstletter = string.charAt(0);
+  if (firstletter !== firstletter.toUpperCase()) {
+    return true;
+  }
+  return false;
 };
 
 module.exports = {
