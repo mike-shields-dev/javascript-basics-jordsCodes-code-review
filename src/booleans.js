@@ -90,8 +90,19 @@ const startsWith = (char, string) => {
   return false;
 };
 
-function containsVowels(string) {
-  // your code here
+const containsVowels = string => {
+  const lowercase = string.toLowerCase();
+  for (let n = 0; n < lowercase.length; n += 1)
+    if (
+      lowercase.charAt(n) === 'a' ||
+      lowercase.charAt(n) === 'e' ||
+      lowercase.charAt(n) === 'i' ||
+      lowercase.charAt(n) === 'o' ||
+      lowercase.charAt(n) === 'u'
+    ) {
+      return true;
+    }
+  return false;
 };
 
 function isLowerCase(string) {
