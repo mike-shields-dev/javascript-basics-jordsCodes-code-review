@@ -8,8 +8,10 @@ const getNthElement = (index, array) => {
 const arrayToCSVString = array => {
   return array.toString();
 };
+
 const csvStringToArray = string => {
-  // your code here
+  console.log(string.split(','));
+  return string.split(',');
 };
 
 const addToArray = (element, array) => {
