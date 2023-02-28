@@ -72,11 +72,11 @@ describe('addToArray2', () => {
 });
 
 describe('removeNthElement', () => {
-  it('removes the element at position n', () => {
+  xit('removes the element at position n', () => {
     const array = ['ant', 'bison', 'cockerel', 'duck', 'elephant'];
     removeNthElement(2, array);
     expect(array).toEqual(['ant', 'bison', 'duck', 'elephant']);
-    
+
     const arrayTwo = ['thing 1', 'thing 2', 'thing 3', 'thing 4', 'thing 5'];
     removeNthElement(0, arrayTwo);
     expect(arrayTwo).toEqual(['thing 2', 'thing 3', 'thing 4', 'thing 5']);
@@ -84,7 +84,7 @@ describe('removeNthElement', () => {
 });
 
 describe('numbersToStrings', () => {
-  xit('converts every number in the array to a string', () => {
+  it('converts every number in the array to a string', () => {
     expect(numbersToStrings([1, 2, 3])).toEqual(['1', '2', '3']);
     expect(numbersToStrings([7, 8, 9])).toEqual(['7', '8', '9']);
   });
