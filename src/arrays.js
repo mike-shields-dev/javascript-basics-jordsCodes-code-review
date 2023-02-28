@@ -10,21 +10,22 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
-  console.log(string.split(','));
   return string.split(',');
 };
 
 const addToArray = (element, array) => {
-  const newarray = array.push(element);
-  console.log (newarray);
+  array.push(element);
+  console.log(array);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const newarray = array.concat(element);
+  return newarray;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  array.splice(index, 1);
+  return array;
 };
 
 const numbersToStrings = numbers => {
