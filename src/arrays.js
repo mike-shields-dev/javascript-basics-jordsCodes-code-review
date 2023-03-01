@@ -15,7 +15,6 @@ const csvStringToArray = string => {
 
 const addToArray = (element, array) => {
   array.push(element);
-  console.log(array);
 };
 
 const addToArray2 = (element, array) => {
@@ -34,7 +33,12 @@ const numbersToStrings = numbers => {
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const uppercasearray = [];
+  for (let n = 0; n < strings.length; n += 1) {
+    uppercasearray[n] = strings[n].toUpperCase();
+    console.log(uppercasearray);
+  }
+  return uppercasearray;
 };
 
 const reverseWordsInArray = strings => {
