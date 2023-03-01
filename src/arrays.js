@@ -42,7 +42,19 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  const newarray = [];
+  let newstring = [];
+  for (let n = 0; n < strings.length; n += 1) {
+    // Take strings[n] and make it an array:
+    newstring = strings[n].split('');
+    // Reverse the string:
+    newstring.reverse();
+    // Put the string back together:
+    const reversedstring = newstring.join('');
+    // Now, add it back to the strings array:
+    newarray[n] = reversedstring;
+  }
+  return newarray;
 };
 
 const onlyEven = numbers => {
