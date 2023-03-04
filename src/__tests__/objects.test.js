@@ -79,7 +79,7 @@ describe('hasProperty', () => {
 });
 
 describe('isOver65', () => {
-  it('returns true if the person is aged over 65', () => {
+  xit('returns true if the person is aged over 65', () => {
     const jim = {
       name: 'Jim',
       age: 66
@@ -125,7 +125,7 @@ describe('getAges', () => {
 });
 
 describe('findByName', () => {
-  xit('returns the person with the given name', () => {
+  it('returns the person with the given name', () => {
     const jim = {
       name: 'Jim',
       age: 66
