@@ -102,7 +102,7 @@ const sumNumbers = numbers => {
 
 const sortByLastLetter = strings => {
   return strings.sort(
-    //  Note, if a-b is negative (if a is smaller) it returns true, so the values stay put)
+    //  Note if a-b is negative (if a is smaller) it returns true, so the values stay put)
     (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
   );
 };
