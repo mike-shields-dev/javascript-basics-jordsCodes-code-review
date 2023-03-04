@@ -37,7 +37,8 @@ const findByName = (name, people) => {
 };
 
 const findHondas = cars => {
-  const hondas = cars.filter(car => car.manufacturer === 'Toyota');
+  const hondas = cars.filter(car => car.manufacturer === 'Honda');
+  console.log(hondas);
   return hondas;
 };
 
