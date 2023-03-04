@@ -1,19 +1,19 @@
-const sayHello = (string) => {
-  return 'Hello, ' + string + '!';
+const sayHello = string => {
+  return `Hello, ${string}!`;
 };
-const uppercase = (string) => {
+const uppercase = string => {
   return string.toUpperCase();
 };
 
-const lowercase = (string) => {
+const lowercase = string => {
   return string.toLowerCase();
 };
 
-const countCharacters = (string) => {
+const countCharacters = string => {
   return string.length;
 };
 
-const firstCharacter = (string) => {
+const firstCharacter = string => {
   return string.charAt(0);
 };
 
@@ -29,3 +29,5 @@ module.exports = {
   firstCharacter,
   firstCharacters
 };
+
+const update = "token update for git";
