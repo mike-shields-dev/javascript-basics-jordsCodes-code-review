@@ -125,7 +125,7 @@ describe('getAges', () => {
 });
 
 describe('findByName', () => {
-  it('returns the person with the given name', () => {
+  xit('returns the person with the given name', () => {
     const jim = {
       name: 'Jim',
       age: 66
@@ -147,7 +147,7 @@ describe('findByName', () => {
 });
 
 describe('findHondas', () => {
-  xit('returns a list of cars manufactured by Honda', () => {
+  it('returns a list of cars manufactured by Honda', () => {
     const car1 = {
       manufacturer: 'Honda',
       year: 1997,

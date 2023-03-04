@@ -24,19 +24,21 @@ const isOver65 = person => {
 
 const getAges = people => {
   const ages = people.map(person => {
-    console.log(person.age);
     return person.age;
   });
-  console.log(ages);
   return ages;
 };
 
 const findByName = (name, people) => {
-  // your code here
+  console.log(name);
+  const find = people.find(person => person.name === name);
+  console.log(find);
+  return find;
 };
 
 const findHondas = cars => {
-  // your code here
+  const hondas = cars.filter(car => car.manufacturer === 'Toyota');
+  return hondas;
 };
 
 const averageAge = people => {
