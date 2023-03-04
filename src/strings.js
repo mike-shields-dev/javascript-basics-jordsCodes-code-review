@@ -29,5 +29,3 @@ module.exports = {
   firstCharacter,
   firstCharacters
 };
-
-const update = "token update for git";
