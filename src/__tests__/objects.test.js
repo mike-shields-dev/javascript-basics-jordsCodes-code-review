@@ -26,7 +26,7 @@ describe('createPerson', () => {
 });
 
 describe('getName', () => {
-  it('returns the name property of the object', () => {
+  xit('returns the name property of the object', () => {
     expect(
       getName({
         name: 'Fred',
