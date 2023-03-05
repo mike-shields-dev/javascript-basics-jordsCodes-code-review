@@ -227,7 +227,6 @@ describe('createTalkingPerson', () => {
     expect(bill.introduce('Penny')).toEqual(
       'Hi Penny, my name is Bill and I am 40!'
     );
-
     expect(catherine.introduce('Zoe')).toEqual(
       'Hi Zoe, my name is Catherine and I am 21!'
     );

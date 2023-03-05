@@ -1,61 +1,116 @@
-function negate(a) {
-  // your code here
+const negate = a => {
+  if (a) {
+    return false;
+  }
+  return true;
 };
 
-function both(a, b) {
-  // your code here
+const both = (a, b) => {
+  if (a && b) {
+    return true;
+  }
+  return false;
 };
 
-function either(a, b) {
-  // your code here
+const either = (a, b) => {
+  if (a || b) {
+    return true;
+  }
+  return false;
 };
 
-function none(a, b) {
-  // your code here
+const none = (a, b) => {
+  if (a === false && b === false){
+    return true;
+  }
+  return false;
 };
 
-function one(a, b) {
-  // your code here
+const one = (a, b) => {
+  if ((a && b === false) || (b && a === false)) {
+    return true;
+  }
+  return false;
 };
 
-function truthiness(a) {
-  // your code here
+const truthiness = a => {
+  if (a) {
+    return true;
+  }
+  return false;
 };
 
-function isEqual(a, b) {
-  // your code here
+const isEqual = (a, b) => {
+  if (a === b) {
+    return true;
+  }
+  return false;
 };
 
-function isGreaterThan(a, b) {
-  // your code here
+const isGreaterThan = (a, b) => {
+  if (a > b) {
+    return true;
+  }
+  return false;
 };
 
-function isLessThanOrEqualTo(a, b) {
-  // your code here
+const isLessThanOrEqualTo = (a, b) => {
+  if (a <= b) {
+    return true;
+  }
+  return false;
 };
 
-function isOdd(a) {
-  // your code here
+const isOdd = a => {
+  if (a % 2 === 0) {
+    return false;
+  }
+  return true;
 };
 
-function isEven(a) {
-  // your code here
+const isEven = a => {
+  if (a % 2 === 0) {
+    return true;
+  }
+  return false;
 };
 
-function isSquare(a) {
-  // your code here
+const isSquare = a => {
+  const n = Math.sqrt(a);
+  if (n * n === a) {
+    return true;
+  }
+  return false;
 };
 
-function startsWith(char, string) {
-  // your code here
+const startsWith = (char, string) => {
+  if (string.charAt(0) === char) {
+    return true;
+  }
+  return false;
 };
 
-function containsVowels(string) {
-  // your code here
+const containsVowels = string => {
+  const lowercase = string.toLowerCase();
+  for (let n = 0; n < lowercase.length; n += 1)
+    if (
+      lowercase.charAt(n) === 'a' ||
+      lowercase.charAt(n) === 'e' ||
+      lowercase.charAt(n) === 'i' ||
+      lowercase.charAt(n) === 'o' ||
+      lowercase.charAt(n) === 'u'
+    ) {
+      return true;
+    }
+  return false;
 };
 
-function isLowerCase(string) {
-  // your code here
+const isLowerCase = string => {
+  const firstletter = string.charAt(0);
+  if (firstletter === firstletter.toLowerCase()) {
+    return true;
+  }
+  return false;
 };
 
 module.exports = {
